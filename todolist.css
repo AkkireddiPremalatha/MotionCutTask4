@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(200,200,200);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    margin:0;
+}
+
+.container {
+    background:rgb(0,50,100);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-style:oblique;
+    font-variant:small-caps;
+    text-align: center;
+    margin-bottom: 20px;
+    color:red
+}
+
+form {
+    display: flex;
+}
+
+form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+li button.edit {
+    color: #ffc107;
+}
+
+li button.delete {
+    color: #dc3545;
+}
+
+li button.complete {
+    color: #28a745;
+}
